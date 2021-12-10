@@ -1,0 +1,25 @@
+/* nav contacts */
+.nav-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.item .link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon-button {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.nav-contacts .link {
+  color: var(--secondary-color);
+}
+
+.nav-contacts .item:nth-child(n + 2) {
+  margin-left: 30px;
+}

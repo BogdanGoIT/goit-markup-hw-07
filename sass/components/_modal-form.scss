@@ -1,0 +1,123 @@
+/* Форма в модалке */
+
+.text-details {
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-field {
+  margin-bottom: 10px;
+}
+
+.form-field:last-of-type {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+  display: block;
+  color: var(--secondary-color);
+}
+
+.form-container {
+  position: relative;
+  width: 448px;
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  outline: none;
+  cursor: pointer;
+  transition: border 250ms var(--cubic-bazier);
+}
+
+.form-input:focus {
+  border: 1px solid var(--acent-color);
+}
+
+.form-input:focus + .form-icon {
+  fill: var(--acent-color);
+}
+
+.form-icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  transition: fill 250ms var(--cubic-bazier);
+}
+
+.form-text {
+  padding: 12px 16px;
+  height: 120px;
+  resize: none;
+}
+
+.form-text::placeholder {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.label-policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-color);
+}
+
+.check-item {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--main-color);
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-icon {
+  fill: var(--white-color);
+}
+
+.form-check:checked + .check-item {
+  background-color: var(--acent-color);
+  border: none;
+}
+
+.policy-contract {
+  font-size: 14px;
+  line-height: 1.71px;
+  margin-left: 5px;
+  letter-spacing: 0.03em;
+
+  color: var(--acent-color);
+}
+
+.send-btn.active {
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  display: block;
+  margin: 30px auto 0 auto;
+}

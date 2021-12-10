@@ -1,36 +1,25 @@
-$color: blue;
-$main-width: 100px;
+@import './base/normalize';
+@import './utils/variables';
+@import './base/reset';
+@import './utils/utils';
 
-body {
-  background-color: $color;
-  width: $main-width;
+@import './components/page-header';
+@import './components/header-logo';
+@import './components/header-nav';
+@import './components/nav-contacts';
 
-  $secondaryColor: red;
-  p {
-    color: $secondaryColor;
-  }
-}
+@import './components/section-hero';
+@import './components/section-feature';
+@import './components/section-work';
+@import './components/section-command';
+@import './components/section-clients';
 
-// Используйте конкотенацию для ховера, фокуса, модификатора мах вложенность 2
+@import './components/page-footer';
+@import './components/footer-join';
+@import './components/footer-subscribe';
 
-.section {
-  color: red;
+@import './components/portfolio-filtre';
+@import './components/portfolio-content';
 
-  &:hover {
-    color: blue;
-  }
-}
-
-.section__title {
-  color: red;
-
-  &:hover {
-    color: green;
-  }
-
-  &--red {
-    color: red;
-  }
-}
-
-// Для отдельного блока или элимента свое правило
+@import './components/modal';
+@import './components/modal-form';
