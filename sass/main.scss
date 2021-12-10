@@ -1,0 +1,36 @@
+$color: blue;
+$main-width: 100px;
+
+body {
+  background-color: $color;
+  width: $main-width;
+
+  $secondaryColor: red;
+  p {
+    color: $secondaryColor;
+  }
+}
+
+// Используйте конкотенацию для ховера, фокуса, модификатора мах вложенность 2
+
+.section {
+  color: red;
+
+  &:hover {
+    color: blue;
+  }
+}
+
+.section__title {
+  color: red;
+
+  &:hover {
+    color: green;
+  }
+
+  &--red {
+    color: red;
+  }
+}
+
+// Для отдельного блока или элимента свое правило
