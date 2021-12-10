@@ -1,25 +1,26 @@
-/* nav contacts */
-.nav-contacts {
+/* header-contacts */
+
+.header-contacts {
   display: flex;
   margin-left: auto;
 }
 
-.item .link {
+.header-contacts__link {
   display: inline-flex;
   align-items: center;
 }
 
-.icon-button {
+.header-icon__button {
   width: 16px;
   height: 12px;
   fill: currentColor;
   margin-right: 10px;
 }
 
-.nav-contacts .link {
+.header-contacts__link {
   color: var(--secondary-color);
 }
 
-.nav-contacts .item:nth-child(n + 2) {
+.header-contacts__item:nth-child(n + 2) {
   margin-left: 30px;
 }
