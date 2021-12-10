@@ -3,10 +3,10 @@
 .site-nav {
   display: flex;
   margin-left: 93px;
-}
 
-.site-nav__item:nth-child(n + 2) {
-  margin-left: 50px;
+  &__item:nth-child(n + 2) {
+    margin-left: 50px;
+  }
 }
 
 .site-nav__link {
@@ -17,16 +17,16 @@
 
 .site-nav__link--active {
   position: relative;
-}
 
-.site-nav__link--active::after {
-  content: '';
-  background-color: var(--acent-color);
-  height: 4px;
-  width: 100%;
-  display: flex;
-  border-radius: 2px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  &::after {
+    content: '';
+    background-color: var(--acent-color);
+    height: 4px;
+    width: 100%;
+    display: flex;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
 }

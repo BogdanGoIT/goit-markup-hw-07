@@ -417,6 +417,10 @@ img {
   margin-left: auto;
 }
 
+.header-contacts__item:nth-child(n + 2) {
+  margin-left: 30px;
+}
+
 .header-contacts__link {
   display: inline-flex;
   align-items: center;
@@ -431,10 +435,6 @@ img {
 
 .header-contacts__link {
   color: var(--secondary-color);
-}
-
-.header-contacts__item:nth-child(n + 2) {
-  margin-left: 30px;
 }
 
 /* HERO */
