@@ -1,3 +1,4 @@
+// общие стили для ul
 .list {
   list-style: none;
   margin: 0;
@@ -5,31 +6,21 @@
 }
 
 /* Прячит чекбокс */
-
 .visualy-hidden {
   appearance: none;
 }
 
-// Отступы от секций
+// общие стили для сонтейнера
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+// общие отступы в секциях
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-// общие стили для контактов и навигации в хедере
-
-.site-nav__link,
-.header-contacts__link {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--main-color);
-  transition: color 250ms var(--cubic-bazier);
-
-  &:hover,
-  &:focus {
-    color: var(--acent-color);
-  }
 }
