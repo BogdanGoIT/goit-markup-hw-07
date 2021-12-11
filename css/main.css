@@ -329,6 +329,54 @@ img {
   padding-bottom: 94px;
 }
 
+.doing-work__title,
+.development-team__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.social-network {
+  width: 206px;
+  height: 44px;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.social-network__list + .social-network__list {
+  margin-left: 10px;
+}
+
+.social-network__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+  border-radius: 50%;
+  transition: fill 250ms var(--cubic-bazier), background-color 250ms var(--cubic-bazier);
+}
+
+.social-network__link:hover, .social-network__link:focus {
+  fill: var(--white-color);
+  background-color: var(--acent-color);
+}
+
+.social-network__svg {
+  width: 20px;
+  height: 20px;
+}
+
+.cmd-link.join:hover,
+.cmd-link.join:focus {
+  fill: var(--white-color);
+  background-color: var(--acent-color);
+}
+
 /* page-header */
 .header {
   position: relative;
@@ -515,15 +563,23 @@ img {
 }
 
 /* WORK */
-.section.work {
+.doing-work {
   padding-top: 0;
 }
 
-.work-annexes {
+.doing-work__list:nth-child(n + 2) {
+  margin-left: 30px;
+}
+
+.doing-work__item {
+  display: flex;
+}
+
+.doing-work__annexes {
   position: relative;
 }
 
-.annexes-text {
+.doing-work__text {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -539,91 +595,43 @@ img {
   font-weight: bold;
 }
 
-.comand-list:nth-child(n + 2),
-.work-item:nth-child(n + 2) {
-  margin-left: 30px;
-}
-
 /* Команда разработчиков */
-.command-item,
-.work-list {
-  display: flex;
-}
-
-.command {
+.development-team {
   background: #f5f4fa;
 }
 
-.comand-list {
+.development-team__list:nth-child(n + 2) {
+  margin-left: 30px;
+}
+
+.development-team__item {
+  display: flex;
+}
+
+.development-team__list {
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
 
-.cmd-cont {
+.development-team__content {
   padding-top: 30px;
   margin-bottom: 16px;
 }
 
-.work-title,
-.command-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.command-name {
+.development-team__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-}
-
-.command-name.title {
   margin-bottom: 10px;
 }
 
-.command-name.skills {
+.development-team__skills {
+  font-size: 16px;
+  line-height: 1.18;
   color: var(--secondary-color);
   font-weight: 400;
-}
-
-.cmd-item {
-  width: 206px;
-  height: 44px;
-  display: flex;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-
-.cmd-link {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: #afb1b8;
-  border-radius: 50%;
-  transition: fill 250ms var(--cubic-bazier), background-color 250ms var(--cubic-bazier);
-}
-
-.cmd-link:hover,
-.cmd-link.join:hover,
-.cmd-link.join:focus,
-.cmd-link:focus {
-  fill: var(--white-color);
-  background-color: var(--acent-color);
-}
-
-.cmd-list + .cmd-list {
-  margin-left: 10px;
-}
-
-.cmd-icon {
-  width: 20px;
-  height: 20px;
 }
 
 /* Постоянные клиенты */

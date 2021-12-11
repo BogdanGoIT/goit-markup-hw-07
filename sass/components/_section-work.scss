@@ -1,14 +1,22 @@
 /* WORK */
 
-.section.work {
+.doing-work {
   padding-top: 0;
+
+  &__list:nth-child(n + 2) {
+    margin-left: 30px;
+  }
 }
 
-.work-annexes {
+.doing-work__item {
+  display: flex;
+}
+
+.doing-work__annexes {
   position: relative;
 }
 
-.annexes-text {
+.doing-work__text {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -26,9 +34,4 @@
   line-height: 1.14;
   text-transform: uppercase;
   font-weight: bold;
-}
-
-.comand-list:nth-child(n + 2),
-.work-item:nth-child(n + 2) {
-  margin-left: 30px;
 }

@@ -1,0 +1,69 @@
+// общие стили для контейнера
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// общие отступы в секциях
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+// Общие стили для заголовка
+.doing-work__title,
+.development-team__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+// иконки на соц.сети
+
+.social-network {
+  width: 206px;
+  height: 44px;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.social-network__list + .social-network__list {
+  margin-left: 10px;
+}
+
+.social-network__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+  border-radius: 50%;
+  transition: fill 250ms var(--cubic-bazier),
+    background-color 250ms var(--cubic-bazier);
+
+  &:hover,
+  &:focus {
+    fill: var(--white-color);
+    background-color: var(--acent-color);
+  }
+}
+
+.social-network__svg {
+  width: 20px;
+  height: 20px;
+}
+
+// иконки на соц.сети
+
+.cmd-link.join:hover,
+.cmd-link.join:focus {
+  fill: var(--white-color);
+  background-color: var(--acent-color);
+}

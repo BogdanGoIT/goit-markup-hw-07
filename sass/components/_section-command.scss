@@ -1,15 +1,18 @@
 /* Команда разработчиков */
 
-.command-item,
-.work-list {
+.development-team {
+  background: #f5f4fa;
+
+  &__list:nth-child(n + 2) {
+    margin-left: 30px;
+  }
+}
+
+.development-team__item {
   display: flex;
 }
 
-.command {
-  background: #f5f4fa;
-}
-
-.comand-list {
+.development-team__list {
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -18,68 +21,21 @@
   text-align: center;
 }
 
-.cmd-cont {
+.development-team__content {
   padding-top: 30px;
   margin-bottom: 16px;
 }
 
-.work-title,
-.command-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.command-name {
+.development-team__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-}
-
-.command-name.title {
   margin-bottom: 10px;
 }
 
-.command-name.skills {
+.development-team__skills {
+  font-size: 16px;
+  line-height: 1.18;
   color: var(--secondary-color);
   font-weight: 400;
-}
-
-.cmd-item {
-  width: 206px;
-  height: 44px;
-  display: flex;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-
-.cmd-link {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: #afb1b8;
-  border-radius: 50%;
-  transition: fill 250ms var(--cubic-bazier),
-    background-color 250ms var(--cubic-bazier);
-}
-
-.cmd-link:hover,
-.cmd-link.join:hover,
-.cmd-link.join:focus,
-.cmd-link:focus {
-  fill: var(--white-color);
-  background-color: var(--acent-color);
-}
-
-.cmd-list + .cmd-list {
-  margin-left: 10px;
-}
-
-.cmd-icon {
-  width: 20px;
-  height: 20px;
 }
