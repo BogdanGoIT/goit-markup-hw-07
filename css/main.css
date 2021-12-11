@@ -473,20 +473,20 @@ img {
 }
 
 /* Feature */
-.feature-item {
+.feature__item {
   display: flex;
 }
 
-.feature-list {
+.feature__list {
   width: 270px;
   margin-left: 30px;
 }
 
-.feature-list:first-child {
+.feature__list:first-child {
   margin-left: 0;
 }
 
-.icon-feature {
+.feature-icon {
   height: 120px;
   display: flex;
   justify-content: center;
@@ -496,7 +496,7 @@ img {
   border-radius: 4px;
 }
 
-.svg-feature {
+.feature-icon__svg {
   width: 70px;
   height: 70px;
 }
