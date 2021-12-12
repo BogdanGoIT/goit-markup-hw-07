@@ -9,6 +9,14 @@
   text-decoration: none;
 }
 
-.logo-header {
+.logo-header--color {
   color: #000000;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.logo-footer--color {
+  color: var(--white-color);
 }

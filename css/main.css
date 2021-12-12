@@ -324,6 +324,22 @@ img {
   margin-right: auto;
 }
 
+.site-nav__link,
+.header-contacts__link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--main-color);
+  transition: color 250ms var(--cubic-bazier);
+}
+
+.site-nav__link:hover, .site-nav__link:focus,
+.header-contacts__link:hover,
+.header-contacts__link:focus {
+  color: var(--acent-color);
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -338,43 +354,26 @@ img {
   margin-bottom: 50px;
 }
 
-.social-network {
-  width: 206px;
-  height: 44px;
-  display: flex;
-  margin: 0 auto;
-  margin-bottom: 30px;
+/* Logo */
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--acent-color);
+  text-decoration: none;
 }
 
-.social-network__list + .social-network__list {
-  margin-left: 10px;
+.logo-header--color {
+  color: #000000;
 }
 
-.social-network__link {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: #afb1b8;
-  border-radius: 50%;
-  transition: fill 250ms var(--cubic-bazier), background-color 250ms var(--cubic-bazier);
+.footer-logo {
+  margin-bottom: 20px;
 }
 
-.social-network__link:hover, .social-network__link:focus {
-  fill: var(--white-color);
-  background-color: var(--acent-color);
-}
-
-.social-network__svg {
-  width: 20px;
-  height: 20px;
-}
-
-.cmd-link.join:hover,
-.cmd-link.join:focus {
-  fill: var(--white-color);
-  background-color: var(--acent-color);
+.logo-footer--color {
+  color: var(--white-color);
 }
 
 /* page-header */
@@ -395,36 +394,6 @@ img {
   z-index: -1;
   width: 100%;
   border-bottom: 1px solid #ececec;
-}
-
-.site-nav__link,
-.header-contacts__link {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--main-color);
-  transition: color 250ms var(--cubic-bazier);
-}
-
-.site-nav__link:hover, .site-nav__link:focus,
-.header-contacts__link:hover,
-.header-contacts__link:focus {
-  color: var(--acent-color);
-}
-
-/* Logo */
-.logo {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--acent-color);
-  text-decoration: none;
-}
-
-.logo-header {
-  color: #000000;
 }
 
 /* Site-nav */
@@ -674,6 +643,45 @@ img {
   fill: currentColor;
 }
 
+.social-network {
+  width: 206px;
+  height: 44px;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.social-network__list + .social-network__list {
+  margin-left: 10px;
+}
+
+.social-network__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+  border-radius: 50%;
+  transition: fill 250ms var(--cubic-bazier), background-color 250ms var(--cubic-bazier);
+}
+
+.social-network__link:hover, .social-network__link:focus {
+  fill: var(--white-color);
+  background-color: var(--acent-color);
+}
+
+.social-network__svg {
+  width: 20px;
+  height: 20px;
+}
+
+.cmd-link.join:hover,
+.cmd-link.join:focus {
+  fill: var(--white-color);
+  background-color: var(--acent-color);
+}
+
 /* FOOTER */
 .footer {
   background: var(--secondary-color-fon);
@@ -686,27 +694,19 @@ img {
   align-items: baseline;
 }
 
-.addr-container {
+.footer-contacts {
   width: 231px;
 }
 
-.footer-logo {
-  color: var(--white-color);
-}
-
-.logo-foot {
-  margin-bottom: 20px;
-}
-
-.addr-list {
+.footer-address__list {
   margin-bottom: 9px;
 }
 
-.addr-list:last-child {
+.footer-address__list:last-child {
   margin-bottom: 0;
 }
 
-.footer-addr {
+.footer-address__link {
   font-style: normal;
   line-height: 1.71;
   text-decoration: none;
@@ -714,13 +714,12 @@ img {
   transition: color 250ms var(--cubic-bazier);
 }
 
-.footer-addr.cont {
-  color: rgba(255, 255, 255, 0.6);
+.footer-address__link:hover, .footer-address__link:focus {
+  color: var(--acent-color);
 }
 
-.footer-addr:hover,
-.footer-addr:focus {
-  color: var(--acent-color);
+.footer-address__link--grey {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* присоиденяйтесь */

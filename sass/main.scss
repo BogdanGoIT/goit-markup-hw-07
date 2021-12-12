@@ -3,10 +3,9 @@
 @import './base/reset';
 @import './utils/utils';
 @import './layout/common';
-@import './layout/social-network';
 
+@import './layout/logo';
 @import './components/page-header';
-@import './components/header-logo';
 @import './components/header-nav';
 @import './components/header-contacts';
 
@@ -15,6 +14,7 @@
 @import './components/section-work';
 @import './components/section-command';
 @import './components/section-clients';
+@import './layout/social-network';
 
 @import './components/page-footer';
 @import './components/footer-join';

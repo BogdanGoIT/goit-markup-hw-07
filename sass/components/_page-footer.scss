@@ -11,39 +11,31 @@
   align-items: baseline;
 }
 
-.addr-container {
+.footer-contacts {
   width: 231px;
 }
 
-.footer-logo {
-  color: var(--white-color);
-}
-
-.logo-foot {
-  margin-bottom: 20px;
-}
-
-.addr-list {
+.footer-address__list {
   margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.addr-list:last-child {
-  margin-bottom: 0;
-}
-
-.footer-addr {
+.footer-address__link {
   font-style: normal;
   line-height: 1.71;
   text-decoration: none;
   color: var(--white-color);
   transition: color 250ms var(--cubic-bazier);
+
+  &:hover,
+  &:focus {
+    color: var(--acent-color);
+  }
 }
 
-.footer-addr.cont {
+.footer-address__link--grey {
   color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-addr:hover,
-.footer-addr:focus {
-  color: var(--acent-color);
 }

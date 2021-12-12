@@ -20,19 +20,3 @@
 
   border-bottom: 1px solid #ececec;
 }
-
-// общие стили для контактов и навигации в хедере
-.site-nav__link,
-.header-contacts__link {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--main-color);
-  transition: color 250ms var(--cubic-bazier);
-
-  &:hover,
-  &:focus {
-    color: var(--acent-color);
-  }
-}
