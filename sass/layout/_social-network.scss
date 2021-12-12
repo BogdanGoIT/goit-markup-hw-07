@@ -35,10 +35,9 @@
   height: 20px;
 }
 
-// иконки на соц.сети
+// иконки футер на соц.сети
 
-.cmd-link.join:hover,
-.cmd-link.join:focus {
+.social-network__link--grey {
+  background: rgba(255, 255, 255, 0.1);
   fill: var(--white-color);
-  background-color: var(--acent-color);
 }

@@ -38,3 +38,13 @@
   text-align: center;
   margin-bottom: 50px;
 }
+
+// бщие стили для заголовка
+.footer-join__title,
+.footer-subscribe__title {
+  margin-bottom: 20px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}

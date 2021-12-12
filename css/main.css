@@ -354,6 +354,14 @@ img {
   margin-bottom: 50px;
 }
 
+.footer-join__title,
+.footer-subscribe__title {
+  margin-bottom: 20px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
 /* Logo */
 .logo {
   font-family: Raleway, sans-serif;
@@ -676,10 +684,9 @@ img {
   height: 20px;
 }
 
-.cmd-link.join:hover,
-.cmd-link.join:focus {
+.social-network__link--grey {
+  background: rgba(255, 255, 255, 0.1);
   fill: var(--white-color);
-  background-color: var(--acent-color);
 }
 
 /* FOOTER */
@@ -723,41 +730,28 @@ img {
 }
 
 /* присоиденяйтесь */
-.join-container {
+.footer-join {
   width: 206px;
   height: 80px;
   margin-left: 70px;
 }
 
-.join-item {
+.join-social {
   display: flex;
 }
 
-.join-title,
-.subscribe-title {
-  margin-bottom: 20px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--white-color);
-}
-
-.cmd-link.join {
-  background: rgba(255, 255, 255, 0.1);
-  fill: var(--white-color);
-}
-
 /* Подпишитесь */
-.subscribe-cont {
+.footer-subscribe {
   width: 570px;
   margin-left: 93px;
 }
 
-.form-foot {
+.subscribe-form {
   display: flex;
   justify-content: space-between;
 }
 
-.foot-mail {
+.subscribe-form__mail {
   width: 358px;
   height: 50px;
   background-color: var(--secondary-color-fon);
@@ -773,17 +767,17 @@ img {
   cursor: pointer;
 }
 
-.foot-mail:focus {
+.subscribe-form__mail:focus {
   outline: none;
 }
 
-.foot-btn {
+.subscribe-form__btn {
   position: relative;
   padding-left: 29px;
   text-align: left;
 }
 
-.foot-svg {
+.subscribe-form__svg {
   position: absolute;
   top: 13px;
   right: 28px;

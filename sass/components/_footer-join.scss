@@ -1,25 +1,11 @@
 /* присоиденяйтесь */
 
-.join-container {
+.footer-join {
   width: 206px;
   height: 80px;
   margin-left: 70px;
 }
 
-.join-item {
+.join-social {
   display: flex;
-}
-
-.join-title,
-.subscribe-title {
-  margin-bottom: 20px;
-  line-height: 1.14;
-  text-transform: uppercase;
-
-  color: var(--white-color);
-}
-
-.cmd-link.join {
-  background: rgba(255, 255, 255, 0.1);
-  fill: var(--white-color);
 }

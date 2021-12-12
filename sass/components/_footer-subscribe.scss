@@ -1,16 +1,16 @@
 /* Подпишитесь */
 
-.subscribe-cont {
+.footer-subscribe {
   width: 570px;
   margin-left: 93px;
 }
 
-.form-foot {
+.subscribe-form {
   display: flex;
   justify-content: space-between;
 }
 
-.foot-mail {
+.subscribe-form__mail {
   width: 358px;
   height: 50px;
 
@@ -30,19 +30,19 @@
 
   color: rgba(255, 255, 255, 0.6);
   cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 }
 
-.foot-mail:focus {
-  outline: none;
-}
-
-.foot-btn {
+.subscribe-form__btn {
   position: relative;
   padding-left: 29px;
   text-align: left;
 }
 
-.foot-svg {
+.subscribe-form__svg {
   position: absolute;
   top: 13px;
   right: 28px;
