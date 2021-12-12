@@ -635,23 +635,23 @@ img {
 }
 
 /* Постоянные клиенты */
-.clients-reg {
+.customers-reg {
   height: 184px;
 }
 
-.clients-title {
+.customers-reg__title {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
   margin-bottom: 50px;
 }
 
-.clients-item {
+.customers-reg__item {
   display: flex;
   justify-content: space-between;
 }
 
-.clients-link {
+.customers-reg__link {
   width: 170px;
   height: 92px;
   display: flex;
@@ -663,16 +663,15 @@ img {
   transition: color 250ms var(--cubic-bazier);
 }
 
-.clients-icon {
+.customers-reg__link:hover, .customers-reg__link:focus {
+  color: var(--acent-color);
+  border: 1px solid var(--acent-color);
+}
+
+.customers-reg__icon {
   width: 106px;
   height: 60px;
   fill: currentColor;
-}
-
-.clients-link:hover,
-.clients-link:focus {
-  color: var(--acent-color);
-  border: 1px solid var(--acent-color);
 }
 
 /* FOOTER */
@@ -680,6 +679,11 @@ img {
   background: var(--secondary-color-fon);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
 }
 
 .addr-container {
@@ -717,11 +721,6 @@ img {
 .footer-addr:hover,
 .footer-addr:focus {
   color: var(--acent-color);
-}
-
-.foot-cont {
-  display: flex;
-  align-items: baseline;
 }
 
 /* присоиденяйтесь */

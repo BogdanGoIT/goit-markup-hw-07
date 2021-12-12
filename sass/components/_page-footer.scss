@@ -6,6 +6,11 @@
   padding-bottom: 60px;
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
 .addr-container {
   width: 231px;
 }
@@ -41,9 +46,4 @@
 .footer-addr:hover,
 .footer-addr:focus {
   color: var(--acent-color);
-}
-
-.foot-cont {
-  display: flex;
-  align-items: baseline;
 }
