@@ -966,7 +966,7 @@ img {
 }
 
 /* Форма в модалке */
-.text-details {
+.modal-text__details {
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.03em;
@@ -975,15 +975,15 @@ img {
   text-align: center;
 }
 
-.form-field {
+.modal-form__field {
   margin-bottom: 10px;
 }
 
-.form-field:last-of-type {
+.modal-form__field:last-of-type {
   margin-bottom: 20px;
 }
 
-.form-label {
+.modal-form__label {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -992,12 +992,12 @@ img {
   color: var(--secondary-color);
 }
 
-.form-container {
+.modal-form__container {
   position: relative;
   width: 448px;
 }
 
-.form-input {
+.modal-form__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1008,15 +1008,15 @@ img {
   transition: border 250ms var(--cubic-bazier);
 }
 
-.form-input:focus {
+.modal-form__input:focus {
   border: 1px solid var(--acent-color);
 }
 
-.form-input:focus + .form-icon {
+.modal-form__input:focus + .modal-form__icon {
   fill: var(--acent-color);
 }
 
-.form-icon {
+.modal-form__icon {
   width: 18px;
   height: 18px;
   position: absolute;
@@ -1025,20 +1025,20 @@ img {
   transition: fill 250ms var(--cubic-bazier);
 }
 
-.form-text {
+.modal-form__text {
   padding: 12px 16px;
   height: 120px;
   resize: none;
 }
 
-.form-text::placeholder {
+.modal-form__text::placeholder {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.label-policy {
+.modal-form__policy {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1048,7 +1048,7 @@ img {
   color: var(--secondary-color);
 }
 
-.check-item {
+.modal-form__item-check {
   width: 16px;
   height: 15px;
   border: 2px solid var(--main-color);
@@ -1059,16 +1059,17 @@ img {
   justify-content: center;
 }
 
-.check-icon {
-  fill: var(--white-color);
-}
-
-.form-check:checked + .check-item {
+.modal-form__check:checked
++ .modal-form__item-check {
   background-color: var(--acent-color);
   border: none;
 }
 
-.policy-contract {
+.modal-form__check-icon {
+  fill: var(--white-color);
+}
+
+.modal-form__contract {
   font-size: 14px;
   line-height: 1.71px;
   margin-left: 5px;
