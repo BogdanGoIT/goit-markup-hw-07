@@ -3,16 +3,16 @@
 .development-team {
   background: #f5f4fa;
 
-  &__list:nth-child(n + 2) {
+  &__item:nth-child(n + 2) {
     margin-left: 30px;
   }
 }
 
-.development-team__item {
+.development-team__list {
   display: flex;
 }
 
-.development-team__list {
+.development-team__item {
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
