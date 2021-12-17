@@ -1,7 +1,8 @@
 /* header-contacts */
 
 .header-contacts {
-  display: flex;
+  @extend %flex-item;
+
   margin-left: auto;
 
   &__item:nth-child(n + 2) {
@@ -10,8 +11,12 @@
 }
 
 .header-contacts__link {
+  @extend %header-item;
+
   display: inline-flex;
   align-items: center;
+
+  color: var(--secondary-color);
 }
 
 .header-icon__button {
@@ -19,8 +24,4 @@
   height: 12px;
   fill: currentColor;
   margin-right: 10px;
-}
-
-.header-contacts__link {
-  color: var(--secondary-color);
 }

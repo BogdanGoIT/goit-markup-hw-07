@@ -8,8 +8,12 @@
   }
 }
 
+.doing-work__title {
+  @extend %main-heading;
+}
+
 .doing-work__item {
-  display: flex;
+  @extend %flex-item;
 }
 
 .doing-work__annexes {

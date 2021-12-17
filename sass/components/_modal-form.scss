@@ -119,7 +119,14 @@
   color: var(--acent-color);
 }
 
+// модалка кнопка отправить
+.send-btn {
+  @extend %btn-style;
+}
+
 .send-btn.active {
+  @extend %btn-style__active;
+
   text-align: center;
   width: 200px;
   height: 50px;

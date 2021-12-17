@@ -8,8 +8,12 @@
   }
 }
 
+.development-team__title {
+  @extend %main-heading;
+}
+
 .development-team__list {
-  display: flex;
+  @extend %flex-item;
 }
 
 .development-team__item {

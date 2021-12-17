@@ -6,6 +6,10 @@
   margin-left: 70px;
 }
 
+.footer-join__title {
+  @extend %footer-title;
+}
+
 .join-social {
-  display: flex;
+  @extend %flex-item;
 }

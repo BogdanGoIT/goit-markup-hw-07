@@ -5,8 +5,12 @@
   margin-left: 93px;
 }
 
+.footer-subscribe__title {
+  @extend %footer-title;
+}
+
 .subscribe-form {
-  display: flex;
+  @extend %flex-item;
   justify-content: space-between;
 }
 

@@ -6,7 +6,8 @@
 }
 
 .portfolio-content {
-  display: flex;
+  @extend %flex-item;
+
   flex-wrap: wrap;
   justify-content: center;
 }

@@ -4,14 +4,11 @@
 }
 
 .customers-reg__title {
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  margin-bottom: 50px;
+  @extend %main-heading;
 }
 
 .customers-reg__list {
-  display: flex;
+  @extend %flex-item;
   justify-content: space-between;
 }
 
