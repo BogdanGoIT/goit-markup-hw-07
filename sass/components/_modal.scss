@@ -47,7 +47,7 @@
   top: 8px;
   right: 8px;
 
-  display: flex;
+  @extend %flex-item;
   align-items: center;
 
   width: 30px;

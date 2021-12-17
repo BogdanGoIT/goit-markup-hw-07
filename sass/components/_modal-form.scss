@@ -1,11 +1,9 @@
 /* Форма в модалке */
 
 .modal-text__details {
-  font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
+  @include font(700, 20px, 1.15);
+
   margin-bottom: 12px;
-  font-weight: bold;
   text-align: center;
 }
 
@@ -18,9 +16,8 @@
 }
 
 .modal-form__label {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
+  @include font(400, 12px, 1.16, 0.01em);
+
   margin-bottom: 4px;
   display: block;
   color: var(--secondary-color);
@@ -66,9 +63,7 @@
   resize: none;
 
   &::placeholder {
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
+    @include font(400, 12px, 1.16, 0.01em);
 
     color: rgba(117, 117, 117, 0.5);
   }
@@ -77,12 +72,11 @@
 // Соглашение
 
 .modal-form__policy {
-  display: flex;
+  @extend %flex-item;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+
+  @include font(400, 14px, 1.71);
 
   color: var(--secondary-color);
 }
@@ -90,10 +84,12 @@
 .modal-form__item-check {
   width: 16px;
   height: 15px;
+
   border: 2px solid var(--main-color);
   border-radius: 2px;
   margin-right: 8px;
-  display: flex;
+
+  @extend %flex-item;
   align-items: center;
   justify-content: center;
 }
@@ -111,11 +107,7 @@
 // Условия договора
 
 .modal-form__contract {
-  font-size: 14px;
-  line-height: 1.71px;
   margin-left: 5px;
-  letter-spacing: 0.03em;
-
   color: var(--acent-color);
 }
 
@@ -127,9 +119,10 @@
 .send-btn.active {
   @extend %btn-style__active;
 
-  text-align: center;
   width: 200px;
   height: 50px;
   display: block;
   margin: 30px auto 0 auto;
+
+  text-align: center;
 }

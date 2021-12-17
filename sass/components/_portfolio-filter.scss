@@ -2,8 +2,8 @@
 
 /* Фильтра */
 
-.portfolio-filtre {
-  display: flex;
+.portfolio-filter {
+  @extend %flex-item;
   justify-content: center;
   margin-bottom: 50px;
 

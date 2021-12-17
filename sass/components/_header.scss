@@ -6,7 +6,7 @@
 
 .header-container,
 .header-nav {
-  display: flex;
+  @extend %flex-item;
   align-items: center;
 }
 

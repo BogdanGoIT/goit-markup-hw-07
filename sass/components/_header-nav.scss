@@ -1,7 +1,8 @@
-/* Site-nav */
+/* header Site-nav */
 
 .site-nav {
-  display: flex;
+  @extend %flex-item;
+
   margin-left: 93px;
 
   &__item:nth-child(n + 2) {

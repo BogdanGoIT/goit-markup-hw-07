@@ -1,9 +1,9 @@
 /* Feature */
-.feature__item {
-  display: flex;
+.feature-list {
+  @extend %flex-item;
 }
 
-.feature__list {
+.feature-list__item {
   width: 270px;
   margin-left: 30px;
 
@@ -13,10 +13,12 @@
 }
 
 .feature-icon {
-  height: 120px;
-  display: flex;
+  @extend %flex-item;
   justify-content: center;
   align-items: center;
+
+  height: 120px;
+
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -27,15 +29,14 @@
   height: 70px;
 }
 
-.feature-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+.feature-list__title {
+  @include font(700, 14px, 1.14);
+
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 
-.feature-text {
+.feature-list__text {
   line-height: 1.71;
   color: var(--secondary-color);
 }

@@ -31,15 +31,12 @@
 }
 
 .development-team__name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
+  @include font(500, 16px, 1.18);
   margin-bottom: 10px;
 }
 
 .development-team__skills {
-  font-size: 16px;
-  line-height: 1.18;
+  @include font(400, 16px, 1.18);
+
   color: var(--secondary-color);
-  font-weight: 400;
 }
